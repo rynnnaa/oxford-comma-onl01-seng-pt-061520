@@ -1,11 +1,11 @@
-def oxford_comma(arr)
-  if arr.length == 1
-    arr.join(", ")
-    elsif arr.length == 2
-    arr.join(" and ")
+def oxford_comma(array)
+  if array.length == 1 
+    array.join(" , ")
+  elsif array.length == 2 
+    array.join(" and ")
   else
-    element_popped = arr.pop
-    arr.push("and #{element_popped}")
-    arr.join(", ")
+    element_popped = array.pop
+    array << "and #{element_popped}"
+    array.join(", ")
   end
 end
