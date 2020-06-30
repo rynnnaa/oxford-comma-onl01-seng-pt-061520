@@ -4,8 +4,10 @@ def oxford_comma(array)
   elsif array.length == 2 
     array.join(" and ")
   else
-    element_popped = array.pop
-    array << "and #{element_popped}"
+    # element_popped = array.pop
+    # array << "and #{element_popped}"
+    # array.join(", ")
+    array.insert(-2, "and")
     array.join(", ")
   end
 end
